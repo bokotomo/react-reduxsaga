@@ -1,12 +1,11 @@
 import React from 'react';
 
-interface OwnProps {
+interface Props {
   readonly name: string;
   readonly age: number;
   requestGetUser(id: string): void;
   requestGetUserAge(id: string): void;
 }
-type Props = OwnProps;
 export class TopPage extends React.Component<Props> {
   render() {
     return (
